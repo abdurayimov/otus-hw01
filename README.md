@@ -1,4 +1,6 @@
 # otus-hws
 Otus Homeworks
 
-Lenmar Abdurayimov
+> mvn clean compile assembly:assembly
+
+@Lenmar Abdurayimov
