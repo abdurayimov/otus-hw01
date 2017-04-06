@@ -1,2 +1,4 @@
-# otus-hw01
-Homework 01
+# otus-hws
+Otus Homeworks
+
+Lenmar Abdurayimov
