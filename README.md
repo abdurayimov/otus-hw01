@@ -1,6 +1,4 @@
 # otus-hws
-Otus Homeworks
-
-> mvn clean compile assembly:assembly
+Otus Homeworks (2017-04.3)
 
 @Lenmar Abdurayimov
