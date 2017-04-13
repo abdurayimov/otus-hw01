@@ -14,3 +14,6 @@ hs_err_pid*
 *HW01/.idea
 *HW01/*.iml
 *HW01/target
+*HW02/.idea
+*HW02/*.iml
+*HW02/target
