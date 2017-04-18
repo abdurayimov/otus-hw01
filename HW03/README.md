@@ -1,10 +1,12 @@
-Íàïèñàòü ñâîþ ðåàëèçàöèþ ArrayList íà îñíîâå ìàññèâà.
+# Ð”Ð¾Ð¼Ð°ÑˆÐ½ÐµÐµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ â„–03
+
+ÐÐ°Ð¿Ð¸ÑÐ°Ñ‚ÑŒ ÑÐ²Ð¾ÑŽ Ñ€ÐµÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸ÑŽ ArrayList Ð½Ð° Ð¾ÑÐ½Ð¾Ð²Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°.
 
 > class MyArrayList<T> implements List<T>{...}
 
-Ïðîâåðèòü, ÷òî íà íåé ðàáîòàþò ìåòîäû 
+ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ, Ñ‡Ñ‚Ð¾ Ð½Ð° Ð½ÐµÐ¹ Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÑŽÑ‚ Ð¼ÐµÑ‚Ð¾Ð´Ñ‹ 
 > addAll(Collection<? super T> c, T... elements)
 > static <T> void copy(List<? super T> dest, List<? extends T> src)
 > static <T> void sort(List<T> list, Comparator<? super T> c)
 
-èç java.util.Collections.
+Ð¸Ð· java.util.Collections.
