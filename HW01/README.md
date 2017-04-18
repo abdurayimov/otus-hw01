@@ -1,1 +1,15 @@
+# Домашнее задание №01
+
+Создать проект под управлением maven в Intellij IDEA. 
+Собрать проект командной строке командой mvn install.
+
+Добавить зависимость на csv библиотеку.
+Задать имя проекта (project_name) в pom.xml 
+Собрать project_name.jar содержащий зависимости.
+
+Выложить проект на github. 
+
+Создать ветку "obfuscation" изменить в ней pom.xml так чтобы сборка содержала стадию обфускации байткода.
+
+### Build options
 > mvn clean compile assembly:assembly
