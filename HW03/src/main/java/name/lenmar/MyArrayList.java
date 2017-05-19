@@ -34,7 +34,7 @@ public class MyArrayList<T> implements List<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return new Iterator<T>() {
+        /*return new Iterator<T>() {
 
             private int index;
 
@@ -47,7 +47,8 @@ public class MyArrayList<T> implements List<T> {
             public T next() {
                 return elementData[index++];
             }
-        };
+        };*/
+        return listIterator();
     }
 
     @Override

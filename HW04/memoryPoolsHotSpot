@@ -1,0 +1,68 @@
+Table of names of MemoryManagerMXBean and MemoryPoolMXBean instances under
+different GC algorithms in Oracle HotSpot VM. Memory managers list the pools
+they manage in square brackets; memory pools show their maximum sizes for -Xmx200M setting.
+
+SerialGC:
+---------
+Memory managers:
+  CodeCacheManager [Code Cache]
+  Copy [Eden Space, Survivor Space]
+  MarkSweepCompact [Eden Space, Survivor Space, Tenured Gen, Perm Gen]
+Memory Pools:
+  Code Cache 48
+  Eden Space 53
+  Survivor Space 6
+  Tenured Gen 133
+  Perm Gen 82
+
+ParallelGC:
+-----------
+Memory managers:
+  CodeCacheManager [Code Cache]
+  PS Scavenge [PS Eden Space, PS Survivor Space]
+  PS MarkSweep [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+Memory Pools:
+  Code Cache 48
+  PS Eden Space 56
+  PS Survivor Space 5
+  PS Old Gen 133
+  PS Perm Gen 82
+
+ParallelOldGC:
+---------------
+Memory managers:
+  CodeCacheManager [Code Cache]
+  PS Scavenge [PS Eden Space, PS Survivor Space]
+  PS MarkSweep [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+Memory Pools:
+  Code Cache 48
+  PS Eden Space 56
+  PS Survivor Space 5
+  PS Old Gen 133
+  PS Perm Gen 82
+
+ConcMarkSweepGC:
+----------------
+Memory managers:
+  CodeCacheManager [Code Cache]
+  ParNew [Par Eden Space, Par Survivor Space]
+  ConcurrentMarkSweep [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+Memory Pools:
+  Code Cache 48
+  Par Eden Space 20
+  Par Survivor Space 2
+  CMS Old Gen 175
+  CMS Perm Gen 82
+
+G1GC:
+-----
+Memory managers:
+  CodeCacheManager [Code Cache]
+  G1 Young Generation [G1 Eden, G1 Survivor]
+  G1 Old Generation [G1 Eden, G1 Survivor, G1 Old Gen, G1 Perm Gen]
+Memory Pools:
+  Code Cache 48
+  G1 Eden 0
+  G1 Survivor 0
+  G1 Old Gen 0
+  G1 Perm Gen 82
