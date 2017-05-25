@@ -37,15 +37,16 @@ public class Executor {
     }
 
     private void annotatedMethodRunTest() {
+        Object obj = ReflectionHelper.instantiate(clazz);
         for (Method beforeMethod : beforeMethods) {
-            ReflectionHelper.callMethod(ReflectionHelper.instantiate(clazz), beforeMethod.getName());
+            ReflectionHelper.callMethod(obj, beforeMethod.getName());
         }
         for (Method afterMethod : afterMethods) {
-            ReflectionHelper.callMethod(ReflectionHelper.instantiate(clazz), afterMethod.getName());
+            ReflectionHelper.callMethod(obj, afterMethod.getName());
         }
         for (Method testMethod : testMethods) {
             System.out.println("\t- running method annotated by \"@Test\" (" + testMethod.getName() + ")");
-            ReflectionHelper.callMethod(ReflectionHelper.instantiate(clazz), testMethod.getName());
+            ReflectionHelper.callMethod(obj, testMethod.getName());
         }
     }
 }
